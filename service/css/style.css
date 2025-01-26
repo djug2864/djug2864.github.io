@@ -1,57 +1,127 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+/*ページ背景*/
+body {
+  /* 元の背景色をここに設定 */
+  background-color: #f0f0f0;
+  min-height: 100vh; /* ビューポートの高さを最小値として設定 */
 }
 
-p {
-  line-height: 2rem;
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; /* フッターの背景色 */
+  padding: 20px;
+  text-align: center;
 }
-
-.sidenav-trigger {
-  color: #26a69a;
+/*フォント*/
+body {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, Meiryo, sans-serif;
 }
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
+/*ナビバー*/
+.nav-wrapper {
+    background-color: #fff;
+    padding: 0 2rem;
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
+  .brand-logo {
+    font-size: 1.5rem;
+    color: #333;
   }
-  #index-banner .section {
-    top: 10%;
+
+  .right {
+    float: right;
+    margin-left: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .right.hide-on-med-and-down {
+      display: none;
+    }
+  }
+.nav-wrapper ul li {
+  display: inline-block;
+  margin-right: 10px; /* リンク間の余白 */
+}
+@media only screen and (max-width: 600px) {
+  .nav-wrapper ul li {
+    display: block;
+    margin: 5px 0;
   }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+.navbar {
+  background-color: #f2f2f2; /* ボタンの背景色 */
+  overflow: hidden;
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
+.navbar ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+}
+.navbar {
+  background-color: #f5f5f5; /* より明るいグレー */
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1); /* 上に薄い影をつける */
+}
+
+.navbar a {
+  color: #333; /* 文字色を濃いめに */
+}
+/*トップボタン*/
+.rounded {
+  border-radius: 50px; /* ボタンの丸みの度合いを調整 */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 影をつける */
+}
+
+/* waves-effectクラスのオーバーライド（必要に応じて） */
+.rounded:hover {
+  box-shadow: none; /* ホバー時の影を消す */
+  /* その他のスタイル調整 */
+}
+.rounded {
+  /* ... その他のスタイル ... */
+  padding: 15px 30px; /* ボタン内の余白 */
+  font-size: 18px; /* 文字のサイズ */
+}
+.rounded {
+  /* ... その他のスタイル ... */
+  background-color: #007bff; /* 青色（例：明るい青） */
+}
+.rounded {
+  /* ... その他のスタイル ... */
+  color: #ffffff; /* テキストを白にする */
+}
+/*フッター*/
+footer {
+    text-align: center; /* テキストを中央揃え */
+    background-color: #f0f0f0; /* 背景色を薄いグレーに設定 (例) */
+    padding: 20px; /* 上下左右に余白 */
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer {
+  /* ... */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    }
