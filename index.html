@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>djugのページ</title>
-
-  <!-- CSS  -->
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="white" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="index.html" class="brand-logo">djugのページ</a>
-    <ul class="right hide-on-med-and-down">
-<li><a href="profile.html">djug2864とは</a></li>
-        <li><a href="https://djug-links.blogspot.com">djug links</a></li>
-        <li><a href="https://djug-blog.blogspot.com">ブログ</a></li>
-        <li><a href="https://twitter.com/djug2864">X</a></li>
-        <li><a href="https://github.com/djug2864">Github</a></li>
-      </ul>
-  </div>
-<br>
-</nav>
-
- <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-       <center> <h1>djugのページ</h1></center>
-        <div class="row center">
-          <center><h5>djugが作ったものを載せる場所</h5></center>
-<br>
-<br>
-        </div>
-        <style>
-            #index-banner {
-                background-color: lightblue; /* 背景色を薄い青に設定 */
-            }
-        </style>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">djugのページ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">djug2864とは</a>
+<a class="nav-link" href="feedback.html">フィードバック</a>
+          </li>
+          </ul>
       </div>
     </div>
-</div>
-<br>
-<br>
-   <a href="service/start-page.html" id="service-button" class="btn-large waves-effect waves-light teal lighten-1 rounded">
-  スタートページ
-</a>
-<a href="service/filtering-b.html" id="service-button" class="btn-large waves-effect waves-light teal lighten-1 rounded">
-  フィルタリング回避サイト
-</a>
-<a href="minecraft/" id="service-button" class="btn-large waves-effect waves-light teal lighten-1 rounded">
-  お手製村成長写真
-</a>
+  </nav>
+<!--サービス-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">スタートページ</h5>
+            <p class="card-text">シンプルで軽いスタートページ</p>
+            <a href="service/start-page.html" class="btn btn-primary">詳細</a>
+          </div>
         </div>
-  </body>
-</html>
-<footer>
-    <p>このサイトは著作権で保護されています。©djug2864</p>
-  </footer>
+      </div>
+      </div>
+  </div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">フィルタリング回避</h5>
+            <p class="card-text">学校のタブレットで何でもアクセルができるようになる！</p>
+            <a href="service/filtering-b.html" class="btn btn-primary">詳細</a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">お手製村写真館</h5>
+            <p class="card-text">minecraftのクリエイティブで作ったお手製村の写真を見る場所</p>
+            <a href="minecraft/" class="btn btn-primary">閲覧！</a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+    </html>
