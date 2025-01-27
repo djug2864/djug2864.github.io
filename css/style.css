@@ -3,29 +3,7 @@
       display: block; /* ボタンをブロック要素にする */
       width: 100%; /* ボタンの幅を親要素の幅に合わせる */
     }
-}
-#service-button {
-  max-width: 100%;
-  text-align: center;
-}
-}
-.container {
-  max-width: 100%;
-  text-align: center; /* ボタンを中央揃え */
-}
-
-#service-button {
-  display: block;
-  width: 100%;
-  margin: 10px 0; /* 上下に10pxの余白 */
-}
-
-@media (max-width: 768px) {
-  #service-button {
-    display: block;
-    width: 100%;
-    margin: 10px 0; /* 上下に10pxの余白 */
-}  }/*ページ背景*/
+/*ページ背景*/
 body {
   /* 元の背景色をここに設定 */
   background-color: #f0f0f0;
