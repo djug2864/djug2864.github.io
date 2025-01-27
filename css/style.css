@@ -1,10 +1,9 @@
-@media (max-width: 768px) {
-  .button {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-}
-/*ページ背景*/
+@media (max-width: 768px) { /* タブレットサイズ以下で適用 */
+    #service-button {
+      display: block; /* ボタンをブロック要素にする */
+      width: 100%; /* ボタンの幅を親要素の幅に合わせる */
+    }
+  }/*ページ背景*/
 body {
   /* 元の背景色をここに設定 */
   background-color: #f0f0f0;
