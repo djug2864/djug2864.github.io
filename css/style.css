@@ -4,8 +4,10 @@
       width: 100%; /* ボタンの幅を親要素の幅に合わせる */
     }
 }
-.container {
-    max-width: 100%; /* 親要素の最大幅を100%に設定 */
+#service-button {
+  max-width: 100%;
+  text-align: center;
+}
 }
 }  }/*ページ背景*/
 body {
