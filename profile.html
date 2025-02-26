@@ -31,7 +31,7 @@
           <div class="card-body">
             
            <div class="image-container">
-  <img src="img/Train.png" alt="画像">
+  <img src="img/Train.jpg" alt="画像">
   <div class="text-overlay">
     <h1>djug2864とは</h1>
     <h5>djugってどんな人？</h5>
@@ -58,3 +58,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+<style>
+/*メイン画像*/
+.image-container {
+  position: relative; /* 親要素を基準にする */
+  display: inline-block; /* 画像のサイズに合わせて調整 */
+}
+
+.text-overlay {
+  position: absolute; /* 絶対配置 */
+  top: 0; /* 上端に合わせる */
+  left: 0; /* 左端に合わせる */
+  width: 100%; /* 幅を100%にする */
+  height: 100%; /* 高さを100%にする */
+  display: flex; /* Flexboxで中央揃え */
+  flex-direction: column; /* 縦方向に並べる */
+  justify-content: center; /* 垂直方向に中央揃え */
+  align-items: center; /* 水平方向に中央揃え */
+  color: white; /* テキストの色 */
+  text-align: center; /* テキストを中央揃えにする */
+  background-color: rgba(0, 0, 0, 0.5); /* 背景色（半透明の黒） */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
