@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f0ec; /* Material Design 3 の背景色に近い */
+    color: #1d1b20; /* Material Design 3 のテキスト色に近い */
+padding-top: 60px; /* ヘッダーの高さ分、メインコンテンツを下げる (例: ヘッダーの高さが60pxの場合) */
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #e7e0da; /* Material Design 3 のセカンダリコンテナ色に近い */
+    color: #1d1b20;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Material Design 3 の影 */
+    position: fixed; /* ヘッダーを固定表示にする */
+    top: 0; /* 画面の上端に配置 */
+    left: 0; /* 画面の左端に配置 */
+    width: 100%; /* 幅を画面いっぱいに広げる */
+    z-index: 100; /* 他の要素よりも前面に表示させる (必要に応じて調整) */
+    box-sizing: border-box; /* padding を幅に含める */
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 16px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #49454f; /* Material Design 3 のオンセカンダリコンテナ色に近い */
+}
+
+main {
+    padding: 24px;
+    display: flex; /* Flexbox を有効にする */
+    flex-wrap: wrap; /* 画面幅が狭くなった場合に折り返す */
+    gap: 16px; /* 要素間の間隔を設定 (Material Design 3 のスペーシングを参考に) */
+}
+
+.page {
+    background-color: #fff; /* 白色 */
+    border-radius: 20px; /* 角を丸くする デフォ12px */
+    padding: 32px; /* 内側の余白を少し大きく */
+    margin: 48px auto; /* 上下のマージンを大きく、左右中央寄せ */
+    max-width: 960px; /* 最大幅を設定 (例: 960px) */
+    width: 90%; /* 幅を親要素の 90% に設定 (レスポンシブ対応) */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* 少し強めの影 */
+    box-sizing: border-box; /* padding, border を含めて幅を計算 */
+}
+
+.project-item {
+    background-color: #fff; /* Material Design 3 のサーフェス色に近い */
+    border-radius: 8px; /* Material Design 3 の角の丸み */
+    padding: 16px;
+    margin-bottom: 0; /* Flexbox の子要素なので、下マージンは不要 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Material Design 3 の影 */
+    display: flex;
+    flex-direction: column; /* 内部要素は縦に並べる */
+    width: calc(50% - 8px); /* 2列表示を基本とする (間隔があるので -8px) */
+    box-sizing: border-box; /* padding, border を含めて幅を計算 */
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%; /* 画面が狭い場合は1列表示にする */
+    }
+}
+
+.project-details h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.detail-button {
+    font-family: 'Roboto', sans-serif; /* Material Design 3 推奨フォント (必要に応じてGoogle Fontsから読み込んでください) */
+    font-weight: 500; /* Medium */
+    font-size: 0.875rem; /* 14px */
+    letter-spacing: 0.0178571429em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px; /* Material Design 3 のボタンの角の丸み */
+    padding: 8px 16px;
+    color: #fff; /* オンプライマリー色 */
+    background-color: #6750a4; /* プライマリー色 (例) - Material Theme Builder で生成された色を使用推奨 */
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Material Design 3 の影 */
+    transition: box-shadow 0.3s ease-in-out;
+    text-decoration: none; /* アンダーラインをなくす */
+
+    text-align: center; /* テキストを中央寄せ */
+}
+
+.detail-button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* ホバー時の影 */
+}
+
+.detail-button:focus {
+    outline: none; /* デフォルトのアウトラインを削除 */
+    box-shadow: 0 0 0 2px #6750a4, 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* フォーカス時のスタイル (プライマリーカラーのアウトラインを追加) */
+}
+
+.detail-button:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); /* アクティブ時の影 */
+}
+
+footer {
+    background-color: #e7e0da;
+    color: #49454f;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
