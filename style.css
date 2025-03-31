@@ -125,3 +125,21 @@ footer {
     width: 100%;
     box-sizing: border-box;
 }
+
+.alert-danger {
+  background-color: #FDECEA; /* M3のerror containerの色 */
+  color: #B00020; /* M3のerrorの色 */
+  border-radius: 4px; /* M3の角の丸み */
+  padding: 16px;
+  margin-bottom: 16px;
+  border: none; /* Bootstrapのborderを削除 */
+  display: flex;
+  align-items: center; /* アイコンとテキストを縦中央揃え */
+}
+
+.alert-danger::before {
+  content: "error_outline"; /* M3のエラーアイコン */
+  font-family: 'Material Symbols Outlined'; /* Material Iconsフォント */
+  font-size: 24px;
+  margin-right: 16px;
+}
