@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リンク集 | djugのページ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>djug's page</h1>
+        <nav>
+            <ul>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="https://djug2864.github.io/djug2864-talk">DiscordServer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<div class="page">
+<center><h1>リンク集</h1></center>
+
+<h2>相互リンク</h2>
+
+<div class="alert alert-danger" role="alert">
+ 当サイトへの相互リンクをご希望される場合は、<a href="sogo-d.html">相互リンクの際に関して</a>をご一読ください。
+            </div>
+
+<div class="links-grid">
+    <div class="banner-container">
+        <a href="https://wotosuma.f5.si/" target="_blank" class="banner-link">
+            <img src="https://wotosuma.f5.si/Content/link/image/wotosuma.png" alt="をとすまっ！のサイトへのリンクバナー">
+        </a>
+        <p class="site-name">をとすまっ！</p>
+    </div>
+
+    <div class="banner-container">
+        <a href="https://umaii.f5.si/" target="_blank" class="banner-link">
+            <img src="https://umaii.f5.si/img/banner.png" alt="うまいだんごのサイトへのリンクバナー">
+        </a>
+        <p class="site-name">うまいだんご</p>
+    </div>
+
+    <div class="banner-container">
+        <a href="#" target="_blank" class="banner-link">
+            <img src="https://via.placeholder.com/468x60?text=Dummy+Link+3" alt="ダミーのリンクバナー3">
+        </a>
+        <p class="site-name">ダミーサイト3</p>
+    </div>
+    
+    <div class="banner-container">
+        <a href="#" target="_blank" class="banner-link">
+            <img src="https://via.placeholder.com/468x60?text=Dummy+Link+4" alt="ダミーのリンクバナー4">
+        </a>
+        <p class="site-name">ダミーサイト4</p>
+    </div>
+    
+</div>
+
+<hr style="margin: 32px 0;"> <h2>勝手リンク</h2>
+
+<div class="alert alert-danger" role="alert">
+ 当サイトの管理者が日頃お世話になっているツールをリストアップしています。<br>載せてはいけないリンクはお気軽にお問い合わせフォームよりお願いします。
+            </div>
+
+<div class="text-links-section">
+    <ul class="text-links-list">
+        <li><a href="https://www.elesite-next.com/" target="_blank">えれサイト4</a></li>
+        <li><a href="https://meax.umaii.f5.si/home" target="_blank">Meax-SNS</a></li>
+    </ul>
+</div>
+</div>
+
+
+        </main>
+
+    <footer>
+        <p>&copy; 2025 djug2864</p>
+    </footer>
+<style>
+/* 相互リンクバナーのスタイル - Material Design 3 の見た目を適用 */
+
+/* 【バナー】バナーを4列に並べるためのFlexboxコンテナ */
+.links-grid {
+    display: flex; /* Flexboxを有効にして子要素（バナー）を横に並べる */
+    flex-wrap: wrap; /* 画面幅が狭くなったら折り返す */
+    gap: 16px; /* バナー間の間隔 (Material Design 3のスペーシング) */
+    justify-content: center; /* バナーが中央にくるように調整 */
+}
+
+/* 【バナー】バナーリンクのコンテナ */
+.banner-container {
+    background-color: #fff; /* M3のサーフェス色 (白) */
+    border-radius: 12px; /* M3の標準的な角丸 */
+    padding: 16px;
+    margin-bottom: 0; /* Flexboxの子要素になったため、下マージンをリセット */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06); /* M3の影（Elevation 1） */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center; /* 内部の要素を中央寄せ */
+    
+    /* 4列表示のための幅計算: (100% - 3つの間隔(16px * 3)) / 4 = 約25%の幅を設定 */
+    width: calc(25% - 12px); 
+    max-width: none; 
+}
+
+/* 【バナー】ホバー時の影の強調 (Elevation 2) */
+.banner-container:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 4px 5px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px); /* 少し浮き上がるエフェクト */
+}
+
+/* 【バナー】バナーリンク (<a>タグ) のスタイル */
+.banner-link {
+    display: block; /* リンク全体をクリック可能に */
+    text-decoration: none;
+}
+
+/* 【バナー】バナー画像 */
+.banner-link img {
+    display: block; /* 画像の下の余白を削除 */
+    width: 100%; /* 親要素の幅いっぱいに広げる */
+    max-width: 100%; /* 親要素に合わせて画像を調整 */
+    object-fit: cover; /* アスペクト比を維持して画像を切り抜く */
+    height: auto; /* 高さを自動調整し、元の画像のアスペクト比を保つ */
+    border-radius: 4px; /* 画像にも少し角丸を */
+}
+
+/* 【バナー】サイト名テキスト */
+.site-name {
+    margin-top: 8px;
+    font-weight: 500;
+    color: #49454f; /* M3のオンセカンダリコンテナ色に近い */
+}
+
+/* ======================================================= */
+/* 【新規追加】勝手リンク (テキスト) のスタイル */
+/* ======================================================= */
+
+/* テキストリンクを格納するリスト */
+.text-links-list {
+    list-style: none; /* リストのマーカーを削除 */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexboxを有効にして子要素（li）を横に並べる */
+    flex-wrap: wrap; /* 画面幅が狭くなったら折り返す */
+    gap: 8px; /* リンク間の間隔 */
+}
+
+/* 個々のリストアイテム（リンク） */
+.text-links-list li {
+    /* 4列表示のための幅計算: (100% - 3つの間隔(8px * 3)) / 4 */
+    width: calc(25% - 6px); 
+    box-sizing: border-box; /* padding, borderを含めて幅を計算 */
+}
+
+/* テキストリンクのスタイル */
+.text-links-list li a {
+    display: block; /* リンク全体をクリック可能に */
+    padding: 8px 0;
+    text-decoration: none;
+    color: #6750a4; /* M3のプライマリーカラー (リンク色) */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* ホバー時のスタイル */
+.text-links-list li a:hover {
+    color: #49454f; /* M3のオンセカンダリコンテナ色に近い (ホバー色) */
+    text-decoration: underline;
+}
+
+
+/* ====== レスポンシブ対応 (バナーとテキストリンク共通) ====== */
+
+/* 900px以下: 3列表示に切り替え */
+@media (max-width: 900px) {
+    .banner-container {
+        /* (100% - 2つの間隔) / 3 */
+        width: calc(33.333% - 10.667px); 
+    }
+    .text-links-list li {
+        /* (100% - 2つの間隔) / 3 */
+        width: calc(33.333% - 5.333px);
+    }
+}
+
+/* 600px以下: 2列表示に切り替え */
+@media (max-width: 600px) {
+    .banner-container {
+        /* (100% - 1つの間隔) / 2 */
+        width: calc(50% - 8px); 
+    }
+    .text-links-list li {
+        /* (100% - 1つの間隔) / 2 */
+        width: calc(50% - 4px);
+    }
+}
+
+/* 400px以下: 1列表示に切り替え */
+@media (max-width: 400px) {
+    .banner-container {
+        width: 100%;
+    }
+    .text-links-list li {
+        width: 100%;
+    }
+}
+</style>
+    <script src="script.js"></script>
+</body>
+</html>
