@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | djugのページ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>djug's page</h1>
+        <nav>
+            <ul>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="index.html">Top</a></li>
+                <li><a href="https://djug2864.github.io/djug2864-talk">DiscordServer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page">
+            <center>
+                <span class="material-symbols-outlined" style="font-size: 64px; color: #ba1a1a; margin-top: 20px;">error</span>
+                <h1>404 Not Found</h1>
+            </center>                お探しのページは見つかりませんでした。<br>
+                URLが間違っているか、ページが削除された可能性があります。
+    
+
+            <div class="links-grid" style="justify-content: center; margin-top: 32px;">
+                <div class="banner-container" style="width: auto; min-width: 200px;">
+                    <a href="index.html" class="banner-link">
+                        <span class="material-symbols-outlined" style="font-size: 48px;">home</span>
+                        <p class="site-name">トップページへ戻る</p>
+                    </a>
+                </div>
+                
+                <div class="banner-container" style="width: auto; min-width: 200px;">
+                    <a href="feedback.html" class="banner-link">
+                        <span class="material-symbols-outlined" style="font-size: 48px;">mail</span>
+                        <p class="site-name">お問い合わせ</p>
+                    </a>
+                </div>
+            </div>
+
+            <hr style="margin: 32px 0;"> 
+            
+            <h2>その他のコンテンツ</h2>
+            <div class="text-links-section">
+                <ul class="text-links-list">
+                    <li><a href="profile.html">自己紹介</a></li>
+                    <li><a href="sogo.html">相互リンク一覧</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 djug2864</p>
+    </footer>
+
+    <style>
+        /* 共通のカードデザインを404ページでも使用 */
+        .banner-container {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .banner-container:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-4px);
+        }
+        .site-name {
+            margin-top: 12px;
+            font-weight: bold;
+            color: #6750a4;
+        }
+        /* リンク集のスタイルを継承 */
+        .text-links-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .text-links-list li a {
+            color: #6750a4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>
