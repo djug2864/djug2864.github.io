@@ -1,40 +1,160 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="djugのページ" />
-  <meta property="og:description" content="@djug2864のプロフィール" />
-  <meta property="og:url" content="https://djug2864.github.io" />
-  <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="djugとは | djugのページ" />
-    <title>djugについて | djugのページ</title>
-  <link rel="icon" href="favicon.png">
+    <title>自己紹介 | djug's page</title>
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body class="ticket-page">
     <header>
         <h1>djug's page</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                  <li><a href="https://script.google.com/macros/s/AKfycbxwcub-_v8FmVz-SVSZ2DjaSIA8W_0CHebOEUvlRPti_u4CmuFL8YiQkhmtB3iI1imKEg/exec">Content</a></li>
-                <li><a href="https://djug2864.github.io/djug2864-talk">DiscordServer</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-<div class="page">
+        <div class="page">
+            <div class="train-ticket">
+                <div class="ticket-header">
+                    <span class="company">ＤＪＵＧ鉄道</span>
+                    <span class="ticket-type">普通乗車券</span>
+                </div>
 
-<div class="image-container">
-  <img src="img/Train.jpg" alt="画像">
-  <div class="text-overlay">
-    <h1>djug2864とは</h1>
-    <h5>djugってどんな人？</h5>
+                <div class="ticket-main">
+                    <div class="station-from">
+                        <div class="station-name">ユーザー名</div>
+                        <div class="user-data">djug2864</div>
+                    </div>
+                    <div class="arrow">⇒</div>
+                    <div class="station-to">
+                        <div class="station-name">年齢</div>
+                        <div class="user-data">17歳</div>
+                    </div>
+                </div>
+
+                <div class="ticket-info">
+                    <p>【趣味】 電車・自転車・車・お絵描き・プログラミング</p>
+                    <p>【好物】 ラーメン（特にスガキヤの和風豚骨味！）</p>
+                    <p>【備考】 知的障がいを持つ高校生です。ゆっくり運営中。</p>
+                </div>
+
+                <div class="ticket-footer">
+                    <div class="issue-date">2025年 1月 26日発行</div>
+                    <div class="price">運賃：￥0（有効期間：ずっと）</div>
+                </div>
+                
+                <div class="watermark">DJUG DJUG DJUG</div>
+            </div>
+            <div class="intro-text">
+                <p>ご覧いただきありがとうございます。文がわかりにくいところがあるかもしれませんが、よろしくお願いします！</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 djug2864</p>
+    </footer>
+
+    <style>
+        /* きっぷの外枠 */
+        .train-ticket {
+            background-color: #e6f3e6; /* ほんのり緑色のマルス券カラー */
+            border: 2px solid #a0b0a0;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 40px auto;
+            position: relative;
+            box-shadow: 5px 5px 0px #bbb;
+            font-family: "MS UI Gothic", "Meiryo", sans-serif; /* 少しレトロなフォント */
+            color: #1a3a1a;
+        }
+
+        .ticket-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #a0b0a0;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* ユーザー名と年齢を駅名のように表示 */
+        .ticket-main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .station-name { font-size: 12px; color: #555; }
+        .user-data { font-size: 24px; font-weight: bold; }
+        .arrow { font-size: 30px; }
+
+        .ticket-info {
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 4px;
+        }
+
+        .ticket-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.03); /* 非常に薄い文字で模様を作る */
+            z-index: 0;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .intro-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+<button class="menu-button" onclick="toggleMenu()">
+  <span class="menu-label">種別</span>
+  <span class="menu-text">メニュー開く</span>
+</button>
+
+<div id="side-menu" class="side-menu">
+  <div class="menu-header">ご案内</div>
+  <ul class="menu-list">
+    <li><a href="index.html">🏠 トップページ</a></li>
+    <li><a href="profile.html">🎫 自己紹介（きっぷ）</a></li>
+    
+    <li class="folder">
+      <div class="folder-title" onclick="toggleFolder()">📂 SNSフォルダ (クリック)</div>
+      <ul id="sns-list" class="sns-list">
+        <li><a href="https://twitter.com/djug2864">Twitter (X)</a></li>
+        <li><a href="https://djug-blog.blogspot.com">Blogger</a></li>
+        <li><a href="https://misskey.ranranhome.info/@djug7912">Misskey</a></li>
+        <li><a href="https://meax.umaii.f5.si/users/138">Meax</a></li>
+        <li><a href="https://www.youtube.com/@djug2864">YouTube</a></li>
+      </ul>
+    </li>
+
+    <li><a href="feedback.html">🏣 駅長室（お問い合わせ）</a></li>
+  </ul>
 </div>
+
+<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+<script src="script.js"></script>
+</body>
+</html></div>
 </div>
 <ul>
         <li>ユーザー名: djug2864</li>
